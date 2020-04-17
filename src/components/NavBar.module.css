@@ -22,10 +22,12 @@
 .navitemscenter{
     padding-left: 280px;
     font-family: 'Revalia';
+    font-weight: bold;
     font-size: 20px;
 }
 .navitems{
     padding-left: 20px;
     font-family: 'Revalia';
+    font-weight: bold;
     font-size: 20px;
 }

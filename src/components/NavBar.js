@@ -39,7 +39,9 @@ function NavBar(props){
             </Link>
         </div>
         <div className={css.navitems}>
-            <img src={publicUrl('/assets/settings.svg')} alt="Settings"/>
+            <Link to="/settings">
+                <img src={publicUrl('/assets/settings.svg')} alt="Settings"/>
+            </Link>
         </div>
         
     </nav>
