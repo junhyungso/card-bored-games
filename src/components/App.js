@@ -8,6 +8,7 @@ import {
 import './App.css';
 
 function App() {
+  document.body.style = 'background: #42444D';
   return (
     <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
