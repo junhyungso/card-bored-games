@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './NavBar.module.css'
+import publicUrl from '../utils/publicUrl.js'
 import {
     Link
 } from "react-router-dom";
@@ -36,6 +37,9 @@ function NavBar(props){
             <Link to="/user">
                 User
             </Link>
+        </div>
+        <div className={css.navitems}>
+            <img src={publicUrl('/assets/settings.svg')} alt="Settings"/>
         </div>
         
     </nav>
