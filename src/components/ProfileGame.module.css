@@ -1,0 +1,11 @@
+.game{
+    display:  inline-block;
+    text-align: center;
+    height: 12vh;
+    width: 122px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    background-color: lightcoral;
+    border-radius: 20px;
+}

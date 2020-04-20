@@ -16,7 +16,7 @@ function NavBar(){
     <nav className={css.navbar}>
         <div className={css.nameitem}>
             <Link to="/">
-                CardBored Games
+                CardBored
             </Link>
         </div>
         <div className={css.navitemscenter}>
@@ -29,18 +29,8 @@ function NavBar(){
                 All Games
             </Link>
         </div>
-        <div className={css.navitems}>
-            <Link to="/friends">
-                Friends
-            </Link>
-        </div>
-        <div className={css.navitems}>
-            <Link to="/yourlibrary">
-                Your Library
-            </Link>
-        </div>
         <div className={css.navitemscenter}>
-            <Link to={stringTo}>
+            <Link to="/profile">
                 {users[0].name}
             </Link>
         </div>

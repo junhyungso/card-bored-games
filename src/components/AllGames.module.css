@@ -24,7 +24,7 @@
 }
 
 .col1 {width: 8.33%;}
-.col2 {width: 10.66%;}
+.col2 {width: 12.66%;}
 .col3 {width: 25%;}
 .col4 {width: 33.33%;}
 .col5 {width: 41.66%;}
@@ -37,7 +37,7 @@
 .col12 {width: 100%;}
 
 .categories{
-    width: 80px;
+    width: 90px;
     background-color: #ED5555;
     text-align: center;
     border-radius: 10%;

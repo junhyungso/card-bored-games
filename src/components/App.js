@@ -10,6 +10,8 @@ import './App.css';
 import DataContextProvider from '../contexts/DataContext.js'
 import AllGames from './AllGames';
 import About from './About';
+import GamePage from './GamePage';
+import Profile from './Profile';
 
 function App() {
   document.body.style = 'background: #42444D';
@@ -25,7 +27,13 @@ function App() {
             <Route path="/about">
                 <About/>
             </Route>
-            <Route path="/:gameId?">
+            <Route path="/profile">
+                <Profile/>
+            </Route>
+            <Route path="/game/:gameId?">
+                  <GamePage/>
+            </Route>
+            <Route path="/">
                   <MainPage/>
             </Route>
             

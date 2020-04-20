@@ -1,0 +1,133 @@
+.profilePage{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left:10%;
+    margin-right: 10%;
+    height: 100vh;
+}
+
+.leftElement{
+    width: 30%;
+}
+
+.rightElement{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.userWindow{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    min-width: 300px;
+    min-height: 600px;
+    max-height: 700px;
+    width: 90%;
+    height: 70%;
+    background: #C4C4C4;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+}
+
+.profilePicture{
+    width: auto;
+    height:40%;
+    background-color: black;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.username{
+    text-align: center;
+    height: 15%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top:7.5%;
+    margin-bottom: 7.5%;
+    font-size: 36px;
+}
+
+.description{
+    max-height: 15%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    margin-bottom: 30%;
+ 
+}
+
+.editProfileButton{
+    color: white;
+    height: 5%;
+    font-size: 16px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    background: #ED5555;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.myGameShowcase{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 31.5%;
+    background: #C4C4C4;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title{
+    height: 30%;
+}
+
+.gameList{
+    height:70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.uploadGameButton{
+    height: 5%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: #ED5555;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+.bottomElements{
+    display: flex;
+    flex-direction: row;
+    height: 51.5%;
+}
+.myFriends{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 49.5%;
+    background: #C4C4C4;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.myFriends h1{
+    font-size: 12px;
+}
+.myUpvotes{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 49.5%;
+    margin-left: 1%;
+    background: #C4C4C4;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.upvoteList{
+    height:70%;
+    display: flex;
+    flex-direction: row;
+}

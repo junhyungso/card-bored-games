@@ -16,9 +16,9 @@ function MainPage(){
     let number_one = sorted_games[0];
     let number_two = sorted_games[1];
     let number_three = sorted_games[2];
-    let path_one = "./".concat(sorted_games[0].gameId);
-    let path_two = "./".concat(sorted_games[1].gameId);
-    let path_three = "./".concat(sorted_games[2].gameId);
+    let path_one = "./game/".concat(sorted_games[0].gameId);
+    let path_two = "./game/".concat(sorted_games[1].gameId);
+    let path_three = "./game/".concat(sorted_games[2].gameId);
     return(
         <div>
             {console.log(currentUserId)}
