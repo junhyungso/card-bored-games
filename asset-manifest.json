@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/creative-project-card-bored-games/static/css/main.3d12297b.chunk.css",
-    "main.js": "/creative-project-card-bored-games/static/js/main.c6dd6b0f.chunk.js",
-    "main.js.map": "/creative-project-card-bored-games/static/js/main.c6dd6b0f.chunk.js.map",
+    "main.css": "/creative-project-card-bored-games/static/css/main.118ae688.chunk.css",
+    "main.js": "/creative-project-card-bored-games/static/js/main.44a5d307.chunk.js",
+    "main.js.map": "/creative-project-card-bored-games/static/js/main.44a5d307.chunk.js.map",
     "runtime-main.js": "/creative-project-card-bored-games/static/js/runtime-main.7028c413.js",
     "runtime-main.js.map": "/creative-project-card-bored-games/static/js/runtime-main.7028c413.js.map",
     "static/js/2.22fe0e0b.chunk.js": "/creative-project-card-bored-games/static/js/2.22fe0e0b.chunk.js",
     "static/js/2.22fe0e0b.chunk.js.map": "/creative-project-card-bored-games/static/js/2.22fe0e0b.chunk.js.map",
     "index.html": "/creative-project-card-bored-games/index.html",
-    "precache-manifest.ded026ede22158409f5dfe4a71010feb.js": "/creative-project-card-bored-games/precache-manifest.ded026ede22158409f5dfe4a71010feb.js",
+    "precache-manifest.b8ec9e73f291500e00d5a6dfc7fda575.js": "/creative-project-card-bored-games/precache-manifest.b8ec9e73f291500e00d5a6dfc7fda575.js",
     "service-worker.js": "/creative-project-card-bored-games/service-worker.js",
-    "static/css/main.3d12297b.chunk.css.map": "/creative-project-card-bored-games/static/css/main.3d12297b.chunk.css.map",
+    "static/css/main.118ae688.chunk.css.map": "/creative-project-card-bored-games/static/css/main.118ae688.chunk.css.map",
     "static/js/2.22fe0e0b.chunk.js.LICENSE.txt": "/creative-project-card-bored-games/static/js/2.22fe0e0b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7028c413.js",
     "static/js/2.22fe0e0b.chunk.js",
-    "static/css/main.3d12297b.chunk.css",
-    "static/js/main.c6dd6b0f.chunk.js"
+    "static/css/main.118ae688.chunk.css",
+    "static/js/main.44a5d307.chunk.js"
   ]
 }
