@@ -7,7 +7,7 @@ import {
 import {DataContext} from '../contexts/DataContext.js';
 
 
-function NavBar(props){
+function NavBar(){
     let {
         currentUserId, users
     } = useContext(DataContext);

@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import './App.css';
 import DataContextProvider from '../contexts/DataContext.js'
+import AllGames from './AllGames';
+import About from './About';
 
 function App() {
   document.body.style = 'background: #42444D';
@@ -16,7 +18,20 @@ function App() {
       <DataContextProvider>
         <div className="App">
           <NavBar/>
-          <MainPage/>
+          <Switch>
+            <Route path="/allgames">
+                <AllGames/>
+            </Route>
+            <Route path="/about">
+                <About/>
+            </Route>
+            <Route path="/:gameId?">
+                  <MainPage/>
+            </Route>
+            
+          
+          </Switch>
+          
         </div>
       </DataContextProvider>
     </Router>

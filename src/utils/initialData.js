@@ -1,28 +1,30 @@
 /* sample data store*/
 export default {
     currentUserId: "manogya",
+
+    about:"CardBored Games is an online encyclopedia of card and board games for users seeking game rules, strategies, an online community, and an access to online version of games. Initially developed during the COVID-19 crisis, we aimed to provide entertainment for those individuals required to stay in their households to ideally opt for time-burning activities such as card/web games. Our website provides rules and strategies for all kinds of card games and gives game suggestions based on the number of players and types of game desired. Additionally, we have an option for members to submit their own games and also anonymously vote on other games.",
   
     users: [
       {
-        id: "manogya",
+        id: "Manogya",
         email: "manogya@bc.edu",
         photo: "/assets/user1.png",
         name: "MAch", // name displayed on application and friends list
       },
       {
-        id: "eric",
+        id: "Eric",
         email: "eric@bc.edu",
         photo: "/assets/user2.png",
         name: "Wangatang",
       },
       {
-        id: "jun",
+        id: "Jun",
         email: "jun@bc.edu",
         photo: "/assets/user3.png",
         name: "Junso7",
       },
       {
-        id: "kamil",
+        id: "Kamil",
         email: "kamil@bc.edu",
         photo: "/assets/user3.png",
         name: "kamilPis7",
@@ -60,6 +62,7 @@ export default {
         friendId: "jun",
       },
     ],
+
   
     amountOfVotes: [
       //total votes of a game across all users
