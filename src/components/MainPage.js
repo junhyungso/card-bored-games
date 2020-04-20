@@ -27,13 +27,13 @@ function MainPage(){
                 <h1>What's Hot</h1>
             </div>
             <div className={css.topthree}>
-                <a href={path_one} className={css.three}>{number_one.gameName}</a>
+                <Link to={path_one} className={css.three}>{number_one.gameName}</Link>
             </div>
             <div className={css.topthree}>
-                <a href={path_two} className={css.three}>{number_two.gameName}</a>
+                <Link to={path_two} className={css.three}>{number_two.gameName}</Link>
             </div>
             <div className={css.topthree}>
-                <a href={path_three} className={css.three}>{number_three.gameName}</a>
+                <Link href={path_three} className={css.three}>{number_three.gameName}</Link>
             </div>
         </div>
         

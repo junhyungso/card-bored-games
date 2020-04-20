@@ -14,6 +14,11 @@
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
     background-color: #ED5555;
 }
+.rightstuff{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
 .nameitem{
     font-family: 'Revalia';
     font-weight: bolder;

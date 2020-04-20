@@ -1,6 +1,9 @@
 import React, {useContext } from 'react';
 import {DataContext} from '../contexts/DataContext.js';
 import publicUrl from '../utils/publicUrl.js';
+import {
+    Link
+} from "react-router-dom";
 import css from './About.module.css';
 
 function About(){
@@ -34,13 +37,13 @@ function About(){
                         <b>What's Hot?</b>                      
                     </div>                    
                     <div className = {css.button}> 
-                        <a href={path_one}> {number_one.gameName}</a>
+                        <Link to={path_one}> {number_one.gameName}</Link>
                     </div><br></br>
                     <div className = {css.button}> 
-                        <a href={path_two}> {number_two.gameName}</a>  
+                        <Link to={path_two}> {number_two.gameName}</Link>  
                     </div><br></br>
                     <div className = {css.button}> 
-                        <a href={path_three}> {number_three.gameName}</a>  
+                        <Link to={path_three}> {number_three.gameName}</Link>  
                     </div>
 
                 </div>
