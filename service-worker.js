@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/creative-project-card-bored-games/precache-manifest.232d8bd299d3f3dbd346dc9951c6c05f.js"
+  "/creative-project-card-bored-games/precache-manifest.f00b621de75934dc9bf992a72accedbf.js"
 );
 
 self.addEventListener('message', (event) => {
