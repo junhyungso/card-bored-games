@@ -12,6 +12,7 @@ import AllGames from './AllGames';
 import About from './About';
 import GamePage from './GamePage';
 import Profile from './Profile';
+import Game from './Game';
 
 function App() {
   document.body.style = 'background: #42444D';
@@ -31,7 +32,7 @@ function App() {
                 <Profile/>
             </Route>
             <Route path="/game/:gameId?">
-                  <GamePage/>
+                  <Game/>
             </Route>
             <Route path="/">
                   <MainPage/>

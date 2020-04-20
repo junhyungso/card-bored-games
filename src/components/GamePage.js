@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../contexts/DataContext.js";
 import initialData from "../utils/initialData";
 
-function DisplayGamePage() {
+function GamePage() {
   const [store, setStore] = useState(() => {
     return JSON.parse(window.localStorage.getItem("store")) || initialData;
   });
@@ -124,4 +124,4 @@ function DisplayGamePage() {
     </div>
   );
 }
-export default DisplayGamePage;
+export default GamePage;
