@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2ecc1eda5fdb781273937e93c506be4",
+    "revision": "2eff56cce8708185561ee707d4d867a1",
     "url": "/creative-project-card-bored-games/index.html"
   },
   {
-    "revision": "6e9042b7efb72e04c1e4",
+    "revision": "1a26a0dcabae7a38718e",
     "url": "/creative-project-card-bored-games/static/css/main.118ae688.chunk.css"
   },
   {
-    "revision": "33b3aa81873ab5f94f57",
-    "url": "/creative-project-card-bored-games/static/js/2.569a9f30.chunk.js"
+    "revision": "930cd275dd0b8a116339",
+    "url": "/creative-project-card-bored-games/static/js/2.64586d32.chunk.js"
   },
   {
     "revision": "dd207babaeb913476be46155cc504ef5",
-    "url": "/creative-project-card-bored-games/static/js/2.569a9f30.chunk.js.LICENSE.txt"
+    "url": "/creative-project-card-bored-games/static/js/2.64586d32.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6e9042b7efb72e04c1e4",
-    "url": "/creative-project-card-bored-games/static/js/main.3198175a.chunk.js"
+    "revision": "1a26a0dcabae7a38718e",
+    "url": "/creative-project-card-bored-games/static/js/main.6859af16.chunk.js"
   },
   {
     "revision": "b95e8f0cf3791794cb90",
