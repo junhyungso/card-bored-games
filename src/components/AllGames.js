@@ -7,7 +7,7 @@ import {
 import {DataContext} from '../contexts/DataContext.js'
 import { render } from '@testing-library/react';
 
-function AllGames(){
+function AllGames(){ //POGGERZ
     let {
         currentUserId, games
     } = useContext(DataContext);
