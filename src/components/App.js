@@ -15,6 +15,7 @@ import Profile from './Profile';
 import Game from './Game';
 
 function App() {
+  console.log("jun");
   document.body.style = 'background: #42444D';
   return (
     <Router basename={process.env.PUBLIC_URL}>
