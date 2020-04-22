@@ -27,6 +27,7 @@ function MainPage(){
     }
 
     let randomGame = games[randomNumber()];
+    console.log("For Branches");
 
     return(
         <div>

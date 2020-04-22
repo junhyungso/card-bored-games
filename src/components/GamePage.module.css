@@ -32,7 +32,7 @@
     }
   
     .smallColumnLeft {
-      background-color:blue;
+      background-color:rgb(86, 200, 238);
       float: left;
       width: 15%;
       padding: 19px;
@@ -67,9 +67,9 @@
     }
   
     .gameImage {
-      height: 400px;
+      /* height: 400px; */
       width:400px;
-      background-color: #555;
+      background-color: transparent;
       margin-left: 260px;
     }
   
