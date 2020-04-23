@@ -7,18 +7,14 @@ import { DataContext } from "../contexts/DataContext.js";
 import initialData from "../utils/initialData";
 
 function GamePage() {
-  const [store, setStore] = useState(() => {
-    return JSON.parse(window.localStorage.getItem("store")) || initialData;
-  });
-  useEffect(() => {
-    window.localStorage.setItem("store", JSON.stringify(store));
-  }, [store]);
 
   let{gameId} = useParams();
 
   console.log(gameId);
 
-  let { games } = useContext(DataContext);
+  let { games, addVote, removeVote } = useContext(DataContext);
+
+  console.log(addVote);
 
   let chosenGameData = games.find((a) => a.gameId === gameId);
 
@@ -33,30 +29,14 @@ function GamePage() {
 
   /////
 
-  function handleUnvote() {
-    setStore({
-      ...store,
-      userGameVote: (store.games.find(
-        (a) => a.gameName === "Uno"
-      ).userGameVote -= 1),
-      totalPicks: (store.games.find(
-        (a) => a.gameName === "Uno"
-      ).totalPicks -= 1),
-    });
-    console.log(store.games.find((a) => a.gameName === "Uno").userGameVote);
+  function handleUnvote(e) {
+    console.log("UNVOTEE");
+    removeVote(gameId);
   }
 
-  function handleVote() {
-    setStore({
-      ...store,
-      userGameVote: (store.games.find(
-        (a) => a.gameName === "Uno"
-      ).userGameVote += 1),
-      totalPicks: (store.games.find(
-        (a) => a.gameName === "Uno"
-      ).totalPicks += 1),
-    });
-    console.log(store.games.find((a) => a.gameName === "Uno").userGameVote);
+  function handleVote(e) {
+    console.log("VOTEE");
+    addVote(gameId);  
   }
 
   /////
@@ -77,20 +57,20 @@ function GamePage() {
               <div className={css.smallDesc}>
                 Popularity: <br></br>
                 Picked{" "}
-                {store.games.find((a) => a.gameName === "Uno").totalPicks}{" "}
+                {games.find((a) => a.gameId === gameId).totalPicks}{" "}
                 times!{" "}
               </div>
             </div>
 
             <div className={css.smallColumnRight}>
               <div className={css.smallDesc}>
-                {store.games.find((a) => a.gameId === gameId).userGameVote ===
+                {games.find((a) => a.gameId === gameId).userGameVote ===
                 0 ? (
-                  <button className={css.voteButton} onClick={handleVote}>
+                  <button className={css.voteButton} onClick={(e)=>handleVote()}>
                     Vote
                   </button>
                 ) : (
-                  <button className={css.unvoteButton} onClick={handleUnvote}>
+                  <button className={css.unvoteButton} onClick={(e)=>handleUnvote()}>
                     Unvote
                   </button>
                 )}
