@@ -1,5 +1,7 @@
 import React, {createContext, useState, useEffect} from 'react';
 import initialData from '../utils/initialData.js';
+import uniqueId from '../utils/uniqueId'
+
 
 function DataContextProvider(props){
     const [data, setData] = useState(()=>{
@@ -36,11 +38,29 @@ function DataContextProvider(props){
         console.log(data.games.find((a) => a.gameId === gameId).userGameVote);
       }
 
+      function addGame(name, t1,t2,t3,im,gd, gr){
+        const newgame = {
+          totalPicks: 1,
+          gameTags:{tagOne:t1, tagTwo:t2, tagThree:t3},
+          gameName: name,
+          gameId: uniqueId('game'),
+          photo: im,
+          gameDescription:gd,
+          gameRules:gr,
+          userGameVote: 1
+        }
+        setData({
+          ...data,
+          games: data.games.concat(newgame)
+        })
+
+      }
+
     
 
 
     return(
-        <DataContext.Provider value = {{...data, addVote, removeVote}}>
+        <DataContext.Provider value = {{...data, addVote, removeVote, addGame}}>
             {props.children}
         </DataContext.Provider>
     )

@@ -32,6 +32,11 @@ function NavBar(){
                 All Games
             </Link>
         </div>
+        <div className={css.navitems}>
+            <Link to="/addgame">
+                Add Game
+            </Link>
+        </div>
         <div className={css.rightstuff}>
             <div className={css.navitemscenter}>
                 <Link to="/profile">

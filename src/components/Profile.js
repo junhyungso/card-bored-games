@@ -4,6 +4,9 @@ import publicUrl from '../utils/publicUrl.js'
 import data from "../utils/initialData.js";
 import Friend from "./Friend.js";
 import ProfileGame from "./ProfileGame.js";
+import {
+  Link
+} from "react-router-dom";
 
 function Profile(props) {
 
@@ -29,7 +32,7 @@ function Profile(props) {
           <img alt="profilePicture" width="220" height="220"className={css.profilePicture} src={publicUrl('/assets/unnamed.png')}></img>
           <div className={css.username}>{data.currentUserId}</div>
           <div className={css.description}>This is a sample dexscription. I really like long walks on the beach and fine wine. But I also really like to do other things like doing activities!</div>
-        <button className={css.editProfileButton} onClick={handleProfileEdit}>Edit Profile</button>
+        <button className={css.editProfileButton}>Edit Profile</button>
 
         </div>
       </div>
@@ -52,7 +55,7 @@ function Profile(props) {
           
           
         </div>
-        <button className={css.uploadGameButton} onClick={handleGameUpload}>Upload a Game!</button>
+        <Link to="../addgame"><button className={css.uploadGameButton}>Upload a Game!</button></Link>
 
         <div className={css.bottomElements}>
           <div className={css.myFriends}>

@@ -91,7 +91,7 @@
 }
 
 .uploadGameButton{
-    height: 5%;
+    height: 70%;
     color: white;
     font-size: 18px;
     width: 100%;
@@ -100,6 +100,11 @@
     background: #ED5555;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);   
 }
+.uploadGameButton:hover {
+    background-color: #555; /* Green */
+    color: white;
+  }
+
 .bottomElements{
     display: flex;
     flex-direction: row;

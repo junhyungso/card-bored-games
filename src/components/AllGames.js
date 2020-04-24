@@ -27,7 +27,6 @@ function AllGames(){
                         <div className={css.game}>
                             <div className={css.name}>
                                 <div>
-                                    {console.log("HEYYY")}
                                     <Link to={"./game/".concat(game.gameId)} className={css.nameofgame}>{game.gameName}</Link>
                                 </div>
                                 
