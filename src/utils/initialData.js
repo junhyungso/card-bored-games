@@ -9,7 +9,7 @@ export default {
         id: "Manogya",
         email: "manogya@bc.edu",
         photo: "/assets/user1.png",
-        name: "MAch", // name displayed on application and friends list
+        name: "Manogya", // name displayed on application and friends list
       },
       {
         id: "Eric",
