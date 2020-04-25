@@ -4,11 +4,11 @@ import publicUrl from '../utils/publicUrl.js'
 import {
     Link
 } from "react-router-dom";
-import {DataContext} from '../contexts/DataContext.js'
+import {DataContext} from '../contexts/DataContext.js';
 
 function MainPage(){
     let {
-        currentUserId, games
+        currentUserId, games, about
     } = useContext(DataContext);
 
     let sorted_games = [...games].sort((a,b)=>(a.totalPicks < b.totalPicks)?1:-1);
@@ -29,12 +29,44 @@ function MainPage(){
     let randomGame = games[randomNumber()];
 
     return(
-        <div>
-            {console.log(currentUserId)}
-            
-            <div className={css.top}>
-                <h1>What's Hot</h1>
+        <div className={css.pageborder}>
+            <div className={css.row1}>
+                {/* <div className={css.col4}>
+
+                </div>
+                <div className={css.col8}> */}
+                    <img width="100%"src={publicUrl('/assets/redblack2.png')}></img>
+                        {/* <h1>CardBored</h1>   */}
+
+                {/* </div> */}
+                    {/* <div className={css.top}> */}
+                        {/* <h1>CardBored</h1>  
+                        <p color="black">Learn • Strategize • Invent</p> */}
+                    {/* </div> */}
             </div>
+            <div className={css.top}>
+                <h1>Features</h1>
+            </div>
+            <div className={css.row}>
+                <div className={css.col4}>
+                    Learn and Strategize
+                    Your Favorite Games
+                </div>
+                <div className={css.col4}>
+                    Upload Your Game Ideas
+                </div>
+                <div className={css.col4}>
+                    Vote on Your Favorite Games
+                </div>
+            </div>
+            <br></br>
+            <div className={css.top}>
+                <h1>What's Hot?</h1>
+            </div>
+
+
+            
+
             <div className={css.row}>
                 <div className={css.col6}>
                     <div className={css.topthree}>
@@ -48,12 +80,19 @@ function MainPage(){
                     </div>
                 </div>
                 <div className={css.col3}>
+                    <div className={css.white}>
+                    <h3>Click me to redirect to a random game!</h3>
+                    </div>
                     <div className={css.dice}>
                         <Link to={"./game/"+randomGame.gameId}>
-                            <img width="250" height="250" src={publicUrl('/assets/dice.png')}></img>
+                            <img width="250" height="250" className={css.dicemove} src={publicUrl('/assets/dice.png')}></img>
                         </Link>
                     </div>
                 </div>
+            </div>
+            <div className={css.row}>
+                <br></br>
+                <br></br>
             </div>
             
         </div>
