@@ -39,7 +39,7 @@ function AddGame(){
         evt.preventDefault();
         alert(`Submitted Game: `+gamename);
         addGameToData(gamename, tag1, tag2, tag3, image, gamedesc, gamerules);
-        window.location="../"
+        window.location.href="/creative-project-card-bored-games/";
 
     }
 
