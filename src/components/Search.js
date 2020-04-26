@@ -1,6 +1,9 @@
 import React from "react";
 import data from "../utils/initialData.js";
 import css from "./Search.module.css";
+import {
+  Link
+} from "react-router-dom";
 
 function Search() {
 
@@ -16,7 +19,11 @@ function Search() {
     const results = games.filter(game =>
       game.toLowerCase().includes(searchTerm)
     );
-    setSearchResults(results);
+    if (searchTerm.length != 0){
+      setSearchResults(results);
+    }
+    else{setSearchResults([])}
+
   }, [searchTerm]);
 
   return (
@@ -27,11 +34,11 @@ function Search() {
         value={searchTerm}
         onChange={handleChange}
       />
-      {/* <ul>
+      <ul>
         {searchResults.map(item => (
-          <li>{item}</li>
+           <Link to={"/game/".concat(item.toLowerCase().concat("Id"))}><li>{item}</li></Link>
         ))}
-      </ul> */}
+      </ul>
     </div>
   );
 }
