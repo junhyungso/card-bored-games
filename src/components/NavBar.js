@@ -18,9 +18,9 @@ function NavBar(){
         <div className={css.header}>
             <nav className={css.navbar}>
             <div className={css.logo}>
-                <img width="65" height="65" src={publicUrl('/assets/logo.png')}></img>
+                
                 <Link to="/">
-                    <p>CardBored</p>
+                <img width="65" height="65" src={publicUrl('/assets/logo.png')}></img> <p>CardBored</p>
                 </Link>
             </div>
             <ul className={css.mainNav}>
@@ -42,10 +42,10 @@ function NavBar(){
             </ul>
     
             <div className={css.profileSettings}>
+                    <div className={css.xp}>
+                        <Xp/> 
+                    </div>
                 <div className={css.profile}>
-                        <div className={css.xp}>
-                           <Xp/> 
-                        </div>
                         <Link to="/profile">
                             <a>{users[0].name}</a>
                             <img width="45" height="45" src={publicUrl('/assets/unnamed.png')}></img>

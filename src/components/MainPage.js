@@ -47,6 +47,7 @@ function MainPage(){
             </div>
             <div className={css.top}>
                 <h1>Features</h1>
+                <img className={css.trophy} height="80" width="80" src="./assets/trophy.png"></img>
             </div>
             <div className={css.row}>
                 <div className={css.col4}>
@@ -63,6 +64,7 @@ function MainPage(){
             <br></br>
             <div className={css.top}>
                 <h1>What's Hot?</h1>
+                <img height="80" width="80" src="./assets/whatshot.png"></img>
             </div>
 
 
@@ -71,13 +73,13 @@ function MainPage(){
             <div className={css.row}>
                 <div className={css.col6}>
                     <div className={css.topthree}>
-                        <Link to={path_one} className={css.three}>{number_one.gameName}</Link>
+                        <Link to={path_one} className={css.three}>{number_one.gameName} <img height="60" width="60" src={".".concat(number_one.photo)}></img></Link>
                     </div>
                     <div className={css.topthree}>
-                        <Link to={path_two} className={css.three}>{number_two.gameName}</Link>
+                        <Link to={path_two} className={css.three}>{number_two.gameName}<img height="60" width="60" src={".".concat(number_two.photo)}></img></Link>
                     </div>
                     <div className={css.topthree}>
-                        <Link to={path_three} className={css.three}>{number_three.gameName}</Link>
+                        <Link to={path_three} className={css.three}>{number_three.gameName}<img height="60" width="60" src={".".concat(number_three.photo)}></img></Link>
                     </div>
                 </div>
                 <div className={css.col3}>

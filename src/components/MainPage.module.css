@@ -3,6 +3,13 @@
     text-align: left;
     margin-left: 0px;
 }
+.topthree img{
+    border-radius: 5px;
+    margin-left: 15px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
 .pageborder{
     background-color: black;
     margin-left: 150px;
@@ -10,6 +17,8 @@
 
 }
 .top{
+    display: flex;
+    flex-direction: row;
     margin-top: 30px;
     text-align: center;
     margin-left: 50px;
@@ -18,7 +27,12 @@
     border-bottom: 1px solid;
     border-color: white;
     width: 300px;
-    
+}
+.top img{
+    padding-left: 30px;
+}
+.trophy{
+    margin-left: 60px;
 }
 
 .row{
