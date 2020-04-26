@@ -13,11 +13,11 @@ function Xp(){
     return(
         <div className={css.mastercontainer}>
             <div>
-                {now.level}
+                Level: {now.level}
                 {console.log(now.level)}
             </div>
             <div>
-                {now.xp}
+                {now.xp} XP until the Next Level
                 {console.log(now.xp)}
             </div>
         </div>
