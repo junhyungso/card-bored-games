@@ -1,0 +1,19 @@
+.masterContainer{
+    margin-top: 100px;
+}
+
+.title{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: skyblue
+}
+
+.masterForm{
+    width: 800px;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:inline-block;
+    padding: 5px;
+    background: gold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

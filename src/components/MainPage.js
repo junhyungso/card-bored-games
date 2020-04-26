@@ -5,6 +5,7 @@ import {
     Link
 } from "react-router-dom";
 import {DataContext} from '../contexts/DataContext.js';
+import Xp from './XP';
 
 function MainPage(){
     let {
@@ -89,6 +90,9 @@ function MainPage(){
                         </Link>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Xp/>
             </div>
             <div className={css.row}>
                 <br></br>

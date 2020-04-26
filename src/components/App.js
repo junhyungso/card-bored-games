@@ -14,6 +14,7 @@ import GamePage from './GamePage';
 import Profile from './Profile';
 import Game from './Game';
 import AddGame from './AddGame';
+import Feedback from './Feedback';
 
 function App() {
   document.body.style = 'background: #42444D';
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/addgame">
                   <AddGame/>
+            </Route>
+            <Route path="/feedback">
+                  <Feedback/>
             </Route>
             <Route path="/game/:gameId?">
                   <Game/>

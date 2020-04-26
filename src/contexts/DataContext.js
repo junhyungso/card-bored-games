@@ -38,7 +38,7 @@ function DataContextProvider(props){
         console.log(data.games.find((a) => a.gameId === gameId).userGameVote);
       }
 
-      function addGame(name, t1,t2,t3,im,gd, gr){
+      function addGame(name, t1,t2,t3,im,gd, gr, level, xp, userId){
         const newgame = {
           totalPicks: 1,
           gameTags:{tagOne:t1, tagTwo:t2, tagThree:t3},
@@ -49,18 +49,48 @@ function DataContextProvider(props){
           gameRules:gr,
           userGameVote: 1
         }
+        if(xp <= 0){
+          level += 1;
+          xp += (50);
+        }
+              
+
         setData({
           ...data,
-          games: data.games.concat(newgame)
-        })
+          xp: (data.users.find(
+            (a) => a.id === userId
+          ).xp = xp),
+          level: (data.users.find(
+            (a) => a.id === userId
+          ).level = level),
+          games: data.games.concat(newgame),
+        });
+        
 
       }
 
-    
+      function addXPGame(level, xp, gameId, userId){
+        if(xp <= 0){
+          level += 1;
+          xp += (50);
+        }
+        setData({
+          ...data,
+          xp: (data.users.find(
+            (a) => a.id === userId
+          ).xp = xp),
+          level: (data.users.find(
+            (a) => a.id === userId
+          ).level = level),
+          votedOnce: (data.games.find(
+            (a) => a.gameId === gameId
+          ).votedOnce += 1),
+        });
+      }
 
 
     return(
-        <DataContext.Provider value = {{...data, addVote, removeVote, addGame}}>
+        <DataContext.Provider value = {{...data, addVote, removeVote, addGame, addXPGame}}>
             {props.children}
         </DataContext.Provider>
     )

@@ -11,7 +11,9 @@ import Form from 'react-bootstrap/Form'
 
 function AddGame(){
 
-    let {addGame} = useContext(DataContext);
+    let {addGame, addXPGame, currentUserId, users} = useContext(DataContext);
+
+    let chosenUser = users.find((a)=>a.id === currentUserId);
 
     const { value:gamename, bind:bindgamename} = useInput('');
     const { value:tag1, bind:bindtag1} = useInput('');
@@ -20,7 +22,9 @@ function AddGame(){
     const { value:image, bind:bindimage} = useInput('');
     const { value:gamedesc, bind:bindgamedesc} = useInput('');
     const { value:gamerules, bind:bindgamerules} = useInput('');
+    let gameId="unoId";
 
+    
     function addGameToData(name, t1,t2,t3,im,gd, gr){
         console.log(name);
         console.log(t1);
@@ -29,16 +33,22 @@ function AddGame(){
         console.log(im);
         console.log(gd);
         console.log(gr);
-        addGame(name, t1,t2,t3,im,gd, gr);
+        addGame(name, t1,t2,t3,im,gd, gr, chosenUser.level, chosenUser.xp, currentUserId);
 
     }
+
+    function giveXp() {
+        console.log("VOTEE");
+        addXPGame(chosenUser.level, chosenUser.xp-=25,gameId,currentUserId);
+      }
     
 
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        alert(`Submitted Game: `+gamename);
+        giveXp();
         addGameToData(gamename, tag1, tag2, tag3, image, gamedesc, gamerules);
+        alert(`Submitted Game: `+gamename);
         window.location.href="/creative-project-card-bored-games/";
 
     }

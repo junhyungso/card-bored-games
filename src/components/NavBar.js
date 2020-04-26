@@ -73,7 +73,10 @@ function NavBar(){
                     <a>Contact Us</a>
             </li>
             <li className={css.submenuitem}>
+                <Link to="/feedback">
                     <a>Give Us Feedback</a>
+                </Link>
+                   
             </li>
             <li className={css.submenuitem}>
                     <a>Log Out</a>
