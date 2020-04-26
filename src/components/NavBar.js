@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import css from './NavBar.module.css';
 import publicUrl from '../utils/publicUrl.js';
 import Search from './Search.js';
+import Xp from './XP.js';
 import {
     Link
 } from "react-router-dom";
@@ -42,6 +43,9 @@ function NavBar(){
     
             <div className={css.profileSettings}>
                 <div className={css.profile}>
+                        <div className={css.xp}>
+                           <Xp/> 
+                        </div>
                         <Link to="/profile">
                             <a>{users[0].name}</a>
                             <img width="45" height="45" src={publicUrl('/assets/unnamed.png')}></img>
@@ -66,12 +70,6 @@ function NavBar(){
                     <a>About Us</a>
                 </Link>
                 </li>
-            <li className={css.submenuitem}>
-                    <a>Legal</a>
-            </li>
-            <li className={css.submenuitem}>
-                    <a>Contact Us</a>
-            </li>
             <li className={css.submenuitem}>
                 <Link to="/feedback">
                     <a>Give Us Feedback</a>

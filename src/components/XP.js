@@ -17,7 +17,7 @@ function Xp(){
                 {console.log(now.level)}
             </div>
             <div>
-                {now.xp} XP until the Next Level
+                {now.xp} XP to LVL Up
                 {console.log(now.xp)}
             </div>
         </div>

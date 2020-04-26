@@ -1,11 +1,19 @@
 .game{
     display:  inline-block;
     text-align: center;
-    height: 12vh;
-    width: 122px;
+    height: 100px;
+    width: 100px;
     color: white;
     text-align: center;
     margin: 20px;
     background-color: lightcoral;
     border-radius: 20px;
+}
+
+.game img{
+    border-radius: 5px;
+}
+
+.game a{
+    color: white;
 }

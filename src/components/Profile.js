@@ -20,7 +20,13 @@ function Profile(props) {
   
     //sorts the friends based on current user logged on
     let myFriends = data.friends.filter(f => f.userId === data.currentUserId);
-    console.log(myFriends);
+    
+
+    let myupvotes = data.games.filter(g => g.votedOnce === 1);
+    
+  
+    let mygames = data.games.filter(g => g.addedBy === data.currentUserId);
+  
 
 
   return (
@@ -44,13 +50,12 @@ function Profile(props) {
             <h1> My Game Showcase:</h1>
           </div>
           <div className={css.gameList}>
-            <ProfileGame gameName="Risk"/>
-            <ProfileGame gameName="Monopoly"/>
-            <ProfileGame gameName="Egyptian Ratscrew"/>
-            <ProfileGame gameName="Pong"/>
-            <ProfileGame gameName="Uno"/>
-            <ProfileGame gameName="War"/>
-            <ProfileGame gameName="Go-Fish"/>
+          {mygames.map((g,index) => (
+                <ProfileGame gameName={g.gameName}
+                    gameId={g.gameId}
+                    gamePhoto={g.photo}
+                    key={index} />
+              ))}
           </div>
           
           
@@ -76,9 +81,12 @@ function Profile(props) {
                 <h1>My Upvotes</h1>
               </div>
               <div className={css.upvoteList}>
-                <ProfileGame gameName="Uno"/>
-                <ProfileGame gameName="War"/>
-                <ProfileGame gameName="Go-Fish"/>
+              {myupvotes.map((g,index) => (
+                <ProfileGame gameName={g.gameName}
+                    gameId={g.gameId}
+                    gamePhoto={g.photo}
+                    key={index} />
+              ))}
               </div>
           </div>
         </div>

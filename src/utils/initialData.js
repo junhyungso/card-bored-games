@@ -130,7 +130,7 @@ export default {
         },
         gameName: "Battleship",
         gameId: "battleshipId",
-        votedOnce:0,
+        votedOnce:1,
         photo: "/assets/battleship.png",
         gameDescription:
         "A strategy type guessing game for two players. It is played on ruled grids (paper or board) on which each player's fleet of ships (including battleships) are marked. The locations of the fleets are concealed from the other player. Players alternate turns calling shots at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.",
@@ -150,7 +150,7 @@ export default {
         },
         gameName: "Catan",
         gameId: "catanId",
-        votedOnce:0,
+        votedOnce:1,
         photo: "/assets/catan.jpg",
         gameDescription:
         "Players take on the roles of settlers, each attempting to build and develop holdings while trading and acquiring resources. Players gain points as their settlements grow; the first to reach a set number of points, typically 10, wins.",
@@ -183,7 +183,7 @@ export default {
         gameName: "Taboo",
         gameId: "tabooId",
         photo: "/assets/taboo.png",
-        votedOnce:0,
+        votedOnce:1,
         gameDescription:
         "The objective of the game is for a player to have their partners guess the word on the player's card without using the word itself or five additional words listed on the card.",
         gameRules:

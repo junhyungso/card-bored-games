@@ -17,15 +17,15 @@ function Search() {
 
   React.useEffect(() => {
     const results = games.filter(game =>
-      game.toLowerCase().includes(searchTerm)
+      game.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    if (searchTerm.length != 0){
+    if (searchTerm.length !== 0){
       setSearchResults(results);
     }
     else{setSearchResults([])}
     
   }, [searchTerm]);
-  
+
   return (
     <div className={css.searchbar}>
       <input
@@ -34,13 +34,13 @@ function Search() {
         value={searchTerm}
         onChange={handleChange}
       />
-      <ul>
+      <ul className={css.results}>
         {searchResults.map(item => (
-           <Link to={"/game/".concat(item.toLowerCase().concat("Id"))}><li>{item}</li></Link>
+           <Link to={"/game/".concat(item.toLowerCase().concat("Id")) }><a >{item}</a></Link>
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
 export default Search;
