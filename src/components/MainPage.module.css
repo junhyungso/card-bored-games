@@ -4,7 +4,7 @@
     margin-left: 0px;
 }
 .pageborder{
-    background-color: #282c34;
+    background-color: black;
     margin-left: 150px;
     margin-right: 150px;
 
@@ -14,9 +14,9 @@
     text-align: center;
     margin-left: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #E80000;
+    color: #ED5555;
     border-bottom: 1px solid;
-    border-color: black;
+    border-color: white;
     width: 300px;
     
 }
@@ -48,9 +48,10 @@
 .col4 {
     width: 33.33%; 
     border-style: solid; 
-    border-color:#E80000;
+    border-color:#ED5555;
     color:lightgrey;
     text-align: center;
+    margin-top: 40px;
     font-size: 3vh;
     }
 
@@ -79,7 +80,7 @@
     margin-left: 0px;
      
     border-right: 80px solid transparent;
-    border-bottom: 80px solid #BB000E;
+    border-bottom: 80px solid #ED5555;
     
     
     height: 0px;

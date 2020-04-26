@@ -35,16 +35,16 @@ function About(){
             <div className={css.row}>
                 <div className={css.col1}>
                     <div className={css.hot}>
-                        <b>What's Hot?</b>                      
+                        <b>How to Level Up?</b>                      
                     </div>                    
-                    <div className = {css.button}> 
-                        <Link to={path_one}> {number_one.gameName}</Link>
-                    </div><br></br>
-                    <div className = {css.button}> 
-                        <Link to={path_two}> {number_two.gameName}</Link>  
-                    </div><br></br>
-                    <div className = {css.button}> 
-                        <Link to={path_three}> {number_three.gameName}</Link>  
+                    <div className={css.button}>
+                        Vote for a New Game!
+                    </div>
+                    <div className={css.button}>
+                        Submit a New Game!
+                    </div>
+                    <div className={css.button}>
+                        Leave a Feedback!
                     </div>
 
                 </div>

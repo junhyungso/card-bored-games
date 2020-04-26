@@ -36,32 +36,32 @@ export default {
     friends: [
       // current friends across all users
       {
-        userId: "manogya",
-        friendId: "eric",
+        userId: "Manogya",
+        friendId: "Eric",
       },
       {
-        userId: "manogya",
-        friendId: "jun",
+        userId: "Manogya",
+        friendId: "Jun",
       },
       {
-        userId: "manogya",
-        friendId: "kamil",
+        userId: "Manogya",
+        friendId: "Kamil",
       },
       {
-        userId: "manogya",
-        friendId: "jun",
+        userId: "Manogya",
+        friendId: "Jun",
       },
       {
-        userId: "kamil",
-        friendId: "eric",
+        userId: "Kamil",
+        friendId: "Eric",
       },
       {
-        userId: "jun",
-        friendId: "eric",
+        userId: "Jun",
+        friendId: "Eric",
       },
       {
-        userId: "kamil",
-        friendId: "jun",
+        userId: "Kamil",
+        friendId: "Jun",
       },
     ],
 

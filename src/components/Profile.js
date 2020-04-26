@@ -31,7 +31,7 @@ function Profile(props) {
         <div className={css.userWindow}>
           <img alt="profilePicture" width="220" height="220"className={css.profilePicture} src={publicUrl('/assets/unnamed.png')}></img>
           <div className={css.username}>{data.currentUserId}</div>
-          <div className={css.description}>This is a sample dexscription. I really like long walks on the beach and fine wine. But I also really like to do other things like doing activities!</div>
+          <div className={css.description}>I really like long walks on the beach and fine wine. But I also really like to do other things like doing activities!</div>
         <button className={css.editProfileButton}>Edit Profile</button>
 
         </div>
