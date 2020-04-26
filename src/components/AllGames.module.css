@@ -42,6 +42,15 @@
     text-align: center;
     border-radius: 10%;
 }
+.totalvotes{
+    color:black;
+    width:100px;
+    padding-top: 10px;
+    background-color: #ED5555;
+    border-radius: 10%;
+    text-align: center;
+
+}
 .nameofgame{
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

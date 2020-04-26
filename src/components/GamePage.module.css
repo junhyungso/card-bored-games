@@ -20,7 +20,6 @@
   .column {
 
     width: 48%;
-    height: 600px;
     margin-left: 400px;
   }
   .gameOptions {
@@ -106,10 +105,10 @@
 }
 
 .gameImage {
-  height: 400px;
+  /* height: 400px;
   width: 400px;
-  background-color: #555;
-  margin-left: 260px;
+  background-color: #555; */
+  /* margin-left: 260px; */
 }
 
 .fill {

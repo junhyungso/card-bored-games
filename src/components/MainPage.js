@@ -36,7 +36,7 @@ function MainPage(){
 
                 </div>
                 <div className={css.col8}> */}
-                    <img width="100%"src={publicUrl('/assets/redblack2.png')}></img>
+                    <img width="100%"src={publicUrl('/assets/redblack2.jpg')}></img>
                         {/* <h1>CardBored</h1>   */}
 
                 {/* </div> */}

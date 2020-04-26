@@ -26,9 +26,17 @@ function AllGames(){
                         <div>
                         <div className={css.game}>
                             <div className={css.name}>
-                                <div>
-                                    <Link to={"./game/".concat(game.gameId)} className={css.nameofgame}>{game.gameName}</Link>
+                                <div className={css.row2}>
+                                    <div className={css.col10}>
+                                        <Link to={"./game/".concat(game.gameId)} className={css.nameofgame}>{game.gameName}</Link>
+                                    </div>
+                                    <div className={css.totalvotes}>
+                                        {game.totalPicks} Votes
+                                    </div>
+
+
                                 </div>
+                                
                                 
                                 <div className={css.row2}>
                                     <div className={css.col2}>
