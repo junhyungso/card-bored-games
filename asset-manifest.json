@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/creative-project-card-bored-games/static/css/main.326f91e2.chunk.css",
-    "main.js": "/creative-project-card-bored-games/static/js/main.544d306e.chunk.js",
-    "main.js.map": "/creative-project-card-bored-games/static/js/main.544d306e.chunk.js.map",
+    "main.css": "/creative-project-card-bored-games/static/css/main.0d2edfb5.chunk.css",
+    "main.js": "/creative-project-card-bored-games/static/js/main.bd93aa40.chunk.js",
+    "main.js.map": "/creative-project-card-bored-games/static/js/main.bd93aa40.chunk.js.map",
     "runtime-main.js": "/creative-project-card-bored-games/static/js/runtime-main.7028c413.js",
     "runtime-main.js.map": "/creative-project-card-bored-games/static/js/runtime-main.7028c413.js.map",
-    "static/js/2.16971f3f.chunk.js": "/creative-project-card-bored-games/static/js/2.16971f3f.chunk.js",
-    "static/js/2.16971f3f.chunk.js.map": "/creative-project-card-bored-games/static/js/2.16971f3f.chunk.js.map",
+    "static/js/2.091df4fd.chunk.js": "/creative-project-card-bored-games/static/js/2.091df4fd.chunk.js",
+    "static/js/2.091df4fd.chunk.js.map": "/creative-project-card-bored-games/static/js/2.091df4fd.chunk.js.map",
     "index.html": "/creative-project-card-bored-games/index.html",
-    "precache-manifest.e96e8d148a28b791c384113e6738325d.js": "/creative-project-card-bored-games/precache-manifest.e96e8d148a28b791c384113e6738325d.js",
+    "precache-manifest.40c972c7e49f499e05c04d2521df7689.js": "/creative-project-card-bored-games/precache-manifest.40c972c7e49f499e05c04d2521df7689.js",
     "service-worker.js": "/creative-project-card-bored-games/service-worker.js",
-    "static/css/main.326f91e2.chunk.css.map": "/creative-project-card-bored-games/static/css/main.326f91e2.chunk.css.map",
-    "static/js/2.16971f3f.chunk.js.LICENSE.txt": "/creative-project-card-bored-games/static/js/2.16971f3f.chunk.js.LICENSE.txt"
+    "static/css/main.0d2edfb5.chunk.css.map": "/creative-project-card-bored-games/static/css/main.0d2edfb5.chunk.css.map",
+    "static/js/2.091df4fd.chunk.js.LICENSE.txt": "/creative-project-card-bored-games/static/js/2.091df4fd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7028c413.js",
-    "static/js/2.16971f3f.chunk.js",
-    "static/css/main.326f91e2.chunk.css",
-    "static/js/main.544d306e.chunk.js"
+    "static/js/2.091df4fd.chunk.js",
+    "static/css/main.0d2edfb5.chunk.css",
+    "static/js/main.bd93aa40.chunk.js"
   ]
 }
