@@ -23,9 +23,9 @@ function Search() {
       setSearchResults(results);
     }
     else{setSearchResults([])}
-
+    
   }, [searchTerm]);
-
+  
   return (
     <div className={css.searchbar}>
       <input
