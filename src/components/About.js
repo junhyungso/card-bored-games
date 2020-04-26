@@ -27,8 +27,9 @@ function About(){
     
          
     return(
-        <div>
+        <div className={css.pageborder}>
             <div className={css.top}>
+                <br></br>
                 ABOUT CARDBORED 
             </div>
             <div className={css.row}>
