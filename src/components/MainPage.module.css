@@ -30,7 +30,6 @@
 .row1{
     display: flex;
     justify-content: left;
-    margin-top: 10px;
     flex-direction: row;
     max-height: 70vh;
 

@@ -1,0 +1,16 @@
+.searchbar input{
+    border-radius: 5px;
+    color: white;
+    width:230px;
+}
+
+.searchbar input:hover{
+    animation-name: bar;
+    transition: transform 0.8s ease-in-out;
+    animation-duration: 1s;
+}
+@keyframes bar{
+    0% {width:230px;}
+    50%{width:240px;}
+    100% {width:230px;}
+}

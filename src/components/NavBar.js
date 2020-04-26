@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import css from './NavBar.module.css'
-import publicUrl from '../utils/publicUrl.js'
+import css from './NavBar.module.css';
+import publicUrl from '../utils/publicUrl.js';
+import Search from './Search.js';
 import {
     Link
 } from "react-router-dom";
@@ -13,46 +14,76 @@ function NavBar(){
     } = useContext(DataContext);
     let stringTo = "/".concat(currentUserId);
     return(
-    <nav className={css.navbar}>
-        <div>
-            <img style={{marginTop:'10px'}} width="65" height="65" src={publicUrl('/assets/logo.png')}></img>
-        </div>
-        <div className={css.nameitem}>
-            <Link to="/">
-                CardBored
-            </Link>
-        </div>
-        <div className={css.navitemscenter}>
-            <Link to="/about">
-                About
-            </Link>
-        </div>
-        <div className={css.navitems}>
-            <Link to="/allgames">
-                All Games
-            </Link>
-        </div>
-        <div className={css.navitems}>
-            <Link to="/addgame">
-                Add Game
-            </Link>
-        </div>
-        <div className={css.rightstuff}>
-            <div className={css.navitemscenter}>
-                <Link to="/profile">
-                    {users[0].name}
+        <div className={css.header}>
+            <nav className={css.navbar}>
+            <div className={css.logo}>
+                <img width="65" height="65" src={publicUrl('/assets/logo.png')}></img>
+                <Link to="/">
+                    <p>CardBored</p>
                 </Link>
             </div>
-            <div className={css.navitems}>
-                <Link to="/settings">
-                    <img src={publicUrl('/assets/settings.svg')} alt="Settings"/>
+            <ul className={css.mainNav}>
+                <li className={css.navItem}>
+                <Link to="/allgames">
+                    <a>All Games</a>
                 </Link>
+                </li>
+                <li className={css.navItem}>
+                <Link to="/addgame">
+                    <a>Add Game</a>
+                </Link>    
+                </li>
+                <li className={css.bar}>
+                    <Search/>
+                </li>
+                
+               
+            </ul>
+    
+            <div className={css.profileSettings}>
+                <div className={css.profile}>
+                        <Link to="/profile">
+                            <a>{users[0].name}</a>
+                            <img width="45" height="45" src={publicUrl('/assets/unnamed.png')}></img>
+                        </Link>
+                </div>
+            <div className={css.gear}> 
+                        <img src={publicUrl('/assets/settings.svg')} alt="Settings"/>
+                        <GearSubmenu className={css.submenu}/>
             </div>
+            </div>  
+            
+            </nav> 
         </div>
-        
-        
-    </nav>
-    )
-}
+        )
+    }
 
-export default NavBar;
+    function GearSubmenu(){
+        return(
+            <ul className={css.submenu}>
+                <li className={css.submenuitem}>
+                <Link to="/about">
+                    <a>About Us</a>
+                </Link>
+                </li>
+            <li className={css.submenuitem}>
+                    <a>Legal</a>
+            </li>
+            <li className={css.submenuitem}>
+                    <a>Contact Us</a>
+            </li>
+            <li className={css.submenuitem}>
+                    <a>Give Us Feedback</a>
+            </li>
+            <li className={css.submenuitem}>
+                    <a>Log Out</a>
+            </li>
+    
+    
+    
+            </ul>
+        );
+    }
+
+export{ NavBar,
+        GearSubmenu,}
