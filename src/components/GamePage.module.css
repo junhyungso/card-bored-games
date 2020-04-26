@@ -5,9 +5,7 @@
   min-width: 1900px;
   max-width: 1900px;
 
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  margin:auto;
 }
 
 @media only screen and (max-width: 1900px) {
@@ -20,6 +18,7 @@
   .column {
 
     width: 48%;
+    /* height: 600px; */
     margin-left: 400px;
   }
   .gameOptions {
@@ -27,7 +26,7 @@
     overflow-y: scroll;
     height: 142px;
     width: 780px;
-    background-color: gray;
+    background-color: #ED5555;
     margin-left: 90px;
   }
   .gameOptionsDesc {
@@ -52,7 +51,7 @@
     overflow-y: scroll;
     height: 142px;
     width: 760px;
-    background-color: gray;
+    background-color: #ED5555;
     margin-left: -100px;
   }
 
