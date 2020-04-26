@@ -36,7 +36,7 @@ function Search() {
       />
       <ul>
         {searchResults.map(item => (
-           <Link to={"./game/".concat(item.toLowerCase().concat("Id"))}><li>{item}</li></Link>
+           <Link to={"/game/".concat(item.toLowerCase().concat("Id"))}><li>{item}</li></Link>
         ))}
       </ul>
     </div>
