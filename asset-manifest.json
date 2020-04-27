@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/creative-project-card-bored-games/static/css/main.29116ad9.chunk.css",
+    "main.css": "/creative-project-card-bored-games/static/css/main.4c23672f.chunk.css",
     "main.js": "/creative-project-card-bored-games/static/js/main.0941a50f.chunk.js",
     "main.js.map": "/creative-project-card-bored-games/static/js/main.0941a50f.chunk.js.map",
     "runtime-main.js": "/creative-project-card-bored-games/static/js/runtime-main.7028c413.js",
@@ -8,15 +8,15 @@
     "static/js/2.261851fb.chunk.js": "/creative-project-card-bored-games/static/js/2.261851fb.chunk.js",
     "static/js/2.261851fb.chunk.js.map": "/creative-project-card-bored-games/static/js/2.261851fb.chunk.js.map",
     "index.html": "/creative-project-card-bored-games/index.html",
-    "precache-manifest.59ddd29632c929c02d9e3d8101b3998e.js": "/creative-project-card-bored-games/precache-manifest.59ddd29632c929c02d9e3d8101b3998e.js",
+    "precache-manifest.1327715cb7acf083f45a459bd7719c1b.js": "/creative-project-card-bored-games/precache-manifest.1327715cb7acf083f45a459bd7719c1b.js",
     "service-worker.js": "/creative-project-card-bored-games/service-worker.js",
-    "static/css/main.29116ad9.chunk.css.map": "/creative-project-card-bored-games/static/css/main.29116ad9.chunk.css.map",
+    "static/css/main.4c23672f.chunk.css.map": "/creative-project-card-bored-games/static/css/main.4c23672f.chunk.css.map",
     "static/js/2.261851fb.chunk.js.LICENSE.txt": "/creative-project-card-bored-games/static/js/2.261851fb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7028c413.js",
     "static/js/2.261851fb.chunk.js",
-    "static/css/main.29116ad9.chunk.css",
+    "static/css/main.4c23672f.chunk.css",
     "static/js/main.0941a50f.chunk.js"
   ]
 }
