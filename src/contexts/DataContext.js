@@ -38,7 +38,7 @@ function DataContextProvider(props){
         console.log(data.games.find((a) => a.gameId === gameId).userGameVote);
       }
 
-      function addGame(name, t1,t2,t3,im,gd, gr, level, xp, userId){
+      function addGame(name, t1,t2,t3,im,gd, gr, userId){
         const newgame = {
           totalPicks: 1,
           gameTags:{tagOne:t1, tagTwo:t2, tagThree:t3},
@@ -47,22 +47,13 @@ function DataContextProvider(props){
           photo: im,
           gameDescription:gd,
           gameRules:gr,
+          addedBy:userId,
           userGameVote: 1
-        }
-        if(xp <= 0){
-          level += 1;
-          xp += (50);
         }
               
 
         setData({
           ...data,
-          xp: (data.users.find(
-            (a) => a.id === userId
-          ).xp = xp),
-          level: (data.users.find(
-            (a) => a.id === userId
-          ).level = level),
           games: data.games.concat(newgame),
         });
         

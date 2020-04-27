@@ -1,11 +1,9 @@
 /* Create two equal columns that floats next to each other */
 .masterContainer {
-
-
-  min-width: 1900px;
-  max-width: 1900px;
-
-  margin:auto;
+  min-width: auto;
+  max-width: 1900px;      
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 1900px) {
@@ -13,21 +11,17 @@
     clear: both;
     justify-content: center;
     padding: 0;
-    margin: 0;
+    margin: auto;
   }
   .column {
-
-    width: 48%;
-    /* height: 600px; */
-    margin-left: 400px;
+    margin: 0 auto
   }
   .gameOptions {
-    margin-left: 300px;
     overflow-y: scroll;
     height: 142px;
     width: 780px;
-    background-color: #ED5555;
-    margin-left: 90px;
+    background-color: gray;
+    margin: 0 auto
   }
   .gameOptionsDesc {
     margin-left: 0px;
@@ -35,6 +29,48 @@
   h2{
     margin-left: 0px;
   }
+  .smallColumnLeft {
+    background-color: blue;
+    width:17.8%;
+    padding: 19px;
+    height: 40px;
+    margin-top: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .smallColumnRight {
+    background-color: green;
+    width:20%;
+    height: 100%;
+    margin-top: 40px;
+    margin: auto;
+  }
+
+  .unvoteButton {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+    background-color: transparent;
+    height: 80px;
+    width:100%;
+    display:block;
+    margin-top: -20px;
+  }
+  
+  .voteButton {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+    background-color: transparent;
+    height: 80px;
+    width:100%;
+    display:block;
+    margin-top: -20px;
+  }
+
+  .gameImage {
+    margin-bottom: 10px;
+  }
+
 }
 
 @media only screen and (min-width: 1900px) {
@@ -51,14 +87,51 @@
     overflow-y: scroll;
     height: 142px;
     width: 760px;
-    background-color: #ED5555;
+    background-color: gray;
     margin-left: -100px;
   }
 
   .gameOptionsDesc {
     margin-left: -360px;
   }
+  .smallColumnLeft {
+    background-color: blue;
+    float: left;
+    width: 15%;
+    padding: 19px;
+    height: 40px;
+    margin-left: 260px;
+    margin-top: 40px;
+  }
   
+  .smallColumnRight {
+    background-color: green;
+    float: left;
+    width: 15%;
+    padding: 19px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+  .unvoteButton {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+    background-color: transparent;
+    height: 80px;
+    width: 128%;
+    margin-left: -20px;
+    margin-top: -12px;
+  }
+  
+  .voteButton {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+    background-color: transparent;
+    height: 80px;
+    width: 128%;
+    margin-left: -20px;
+    margin-top: -12px;
+  }
 }
 
 /* Clear floats after the columns */
@@ -66,26 +139,6 @@
   content: "";
   display: table;
   clear: both;
-}
-
-.smallColumnLeft {
-  background-color: blue;
-  float: left;
-  width: 15%;
-  padding: 19px;
-  height: 40px;
-  margin-left: 260px;
-  margin-top: 40px;
-}
-
-.smallColumnRight {
-  background-color: green;
-  float: left;
-  width: 15%;
-  padding: 19px;
-  height: 40px;
-  margin-left: 50px;
-  margin-top: 40px;
 }
 
 .smallDesc {
@@ -103,13 +156,6 @@
   margin: 20px;
 }
 
-.gameImage {
-  /* height: 400px;
-  width: 400px;
-  background-color: #555; */
-  /* margin-left: 260px; */
-}
-
 .fill {
   display: flex;
   justify-content: center;
@@ -125,24 +171,4 @@
 div {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
-}
-
-.unvoteButton {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: large;
-  background-color: transparent;
-  height: 80px;
-  width: 128%;
-  margin-left: -20px;
-  margin-top: -12px;
-}
-
-.voteButton {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: large;
-  background-color: transparent;
-  height: 80px;
-  width: 128%;
-  margin-left: -20px;
-  margin-top: -12px;
 }

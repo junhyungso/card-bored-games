@@ -33,7 +33,7 @@ function AddGame(){
         console.log(im);
         console.log(gd);
         console.log(gr);
-        addGame(name, t1,t2,t3,im,gd, gr, chosenUser.level, chosenUser.xp, currentUserId);
+        addGame(name, t1,t2,t3,im,gd, gr, currentUserId);
 
     }
 
@@ -47,7 +47,7 @@ function AddGame(){
     const handleSubmit = (evt) => {
         evt.preventDefault();
         giveXp();
-        addGameToData(gamename, tag1, tag2, tag3, image, gamedesc, gamerules);
+        addGameToData(gamename, tag1, tag2, tag3, image, gamedesc, gamerules, currentUserId);
         alert(`Submitted Game: `+gamename);
         window.location.href="/creative-project-card-bored-games/";
 

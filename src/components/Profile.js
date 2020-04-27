@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useContext} from "react";
 import css from "./Profile.module.css";
 import publicUrl from '../utils/publicUrl.js'
 import data from "../utils/initialData.js";
+import {DataContext} from '../contexts/DataContext.js';
 import Friend from "./Friend.js";
 import ProfileGame from "./ProfileGame.js";
 import {
@@ -9,6 +10,7 @@ import {
 } from "react-router-dom";
 
 function Profile(props) {
+    let {games, currentUserId, friends} = useContext(DataContext);
 
     function handleProfileEdit(e) {
         console.log('Edit profile button was clicked!');
@@ -16,16 +18,16 @@ function Profile(props) {
 
     function handleGameUpload(e) {
       console.log('Upload Game button was clicked!');
-  }
+    }
   
     //sorts the friends based on current user logged on
-    let myFriends = data.friends.filter(f => f.userId === data.currentUserId);
+    let myFriends = friends.filter(f => f.userId === currentUserId);
     
 
-    let myupvotes = data.games.filter(g => g.votedOnce === 1);
+    let myupvotes = games.filter(g => g.userGameVote === 1);
     
   
-    let mygames = data.games.filter(g => g.addedBy === data.currentUserId);
+    let mygames = games.filter(g => g.addedBy === currentUserId);
   
 
 
