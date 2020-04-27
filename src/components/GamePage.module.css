@@ -20,7 +20,7 @@
     overflow-y: scroll;
     height: 142px;
     width: 780px;
-    background-color: gray;
+    background-color: #ED5555;
     margin: 0 auto
   }
   .gameOptionsDesc {
@@ -87,7 +87,7 @@
     overflow-y: scroll;
     height: 142px;
     width: 760px;
-    background-color: gray;
+    background-color: #ED5555;
     margin-left: -100px;
   }
 
