@@ -72,7 +72,7 @@ function Feedback() {
             <br></br>
             <br></br>
             <br></br>
-            What did you like about out website? <br></br>
+            What did you like about our website? <br></br>
             <textarea
               style={{
                 marginBottom: 20,
