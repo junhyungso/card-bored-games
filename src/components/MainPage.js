@@ -93,9 +93,6 @@ function MainPage(){
                     </div>
                 </div>
             </div>
-            <div>
-                <Xp/>
-            </div>
             <div className={css.row}>
                 <br></br>
                 <br></br>
